@@ -11,7 +11,7 @@ jobs:
             npm install save
   build_docker_image:
     docker:
-      - image: cimg/docker:19.03.12
+      - image: cimg/docker:20.10.7
     steps:
       - checkout
       - setup_remote_docker:
