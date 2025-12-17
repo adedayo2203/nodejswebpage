@@ -17,9 +17,9 @@ jobs:
     - run:
           name: Build Docker Image
           command: |
-            docker build -t my-docker-image:latest .
+            docker build -t adedayo2203/my-docker-image:latest .
             echo ${DOCKERHUB_PASS} | docker login -u ${DOCKERHUB_USER} --password-stdin
-            docker push my-docker-image:latest
+            docker push adedayo2203/my-docker-image:latest
 workflows:
   build_test_and_deploy:
     jobs:
