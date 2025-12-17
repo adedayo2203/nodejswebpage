@@ -10,8 +10,8 @@ jobs:
           command: |
             npm install save
   build_docker_image:
-    docker:
-      - image: cimg/docker:19.03.12
+    machine:
+      image: ubuntu-2004:current
     steps:
       - checkout
       - setup_remote_docker:
